@@ -69,3 +69,5 @@ The entire notebook was executed under:
 
 # Contact
 For further questions or comments, feel free to email at: royrupam964@kgpian.iitkgp.ac.in or royrupam964@gmail.com
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17801779.svg)](https://doi.org/10.5281/zenodo.17801779)
