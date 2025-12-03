@@ -1,7 +1,6 @@
 # RGP_iitkgp_facies_classification_using_single_stacked_ensemble_models
 ## Overview
-This repository contains code for a complete machine-learning workflow for developing single and ensemble classifiers to predict coal, carbonaceous shale, and non-coal lithofacies from high-resolution well-log data.
-Although single classifiers show limited skill in distinguishing carbonaceous facies, ensemble approaches—particularly stacked, heterogeneous, and selected homogeneous ensembles—demonstrate substantial improvements in both class-wise and overall performance. The workflow relies extensively on built-in objects and utilities from [scikit-learn](https://scikit-learn.org/stable/supervised_learning.html#supervised-learning), and several plotting routines are adapted from the works of [Brendon Hall](https://github.com/brendonhall/facies_classification/blob/master/Facies%20Classification%20-%20SVM.ipynb) and [Ryan A. Mardani](https://www.linkedin.com/in/amardani/).
+This repository contains code for a complete machine-learning workflow for developing single and ensemble classifiers to predict coal, carbonaceous shale, and non-coal lithofacies from high-resolution well-log data. Single classifiers show limited accuracy in distinguishing carbonaceous facies; however, ensemble approaches—particularly stacked, heterogeneous, and selected homogeneous ensembles—demonstrate substantial improvements in both class-wise and overall performance. The workflow relies extensively on built-in objects and utilities from [scikit-learn](https://scikit-learn.org/stable/supervised_learning.html#supervised-learning), and several plotting routines are adapted from the works of [Brendon Hall](https://github.com/brendonhall/facies_classification/blob/master/Facies%20Classification%20-%20SVM.ipynb) and [Ryan A. Mardani](https://www.linkedin.com/in/amardani/).
 
 **_Note_**: _The raw source files (Excel) used for training and testing are confidential and
  therefore omitted; their directory paths are replaced with underscores. For illustration,
@@ -12,11 +11,18 @@ Although single classifiers show limited skill in distinguishing carbonaceous fa
  and output features._
 
 ## Notebook Contents
-The Jupyter notebook implements the following major components of the workflow:
+A couple of Jupyter notebooks, namely, [Source code (Part-1): Data variability], and [Source code (Part-2): The main code], implement the following components of the workflow: 
 
+_Part 1_
 1. **Library Imports:** Loading all required Python libraries and auxiliary functions.
 2. **Data Loading:** Importing training and blind-testing datasets as pandas DataFrames.
-3. **Data Description and Preprocessing:** Dataset overview (excluding variability studies in Part 1), correlation matrix, feature selection, and preprocessing routines.
+3. **Data variability analysis:** Dataset overview, variability analyses, and outlier detection.
+
+
+_Part 2_
+1. **Library Imports:** Loading all required Python libraries and auxiliary functions.
+2. **Data Loading:** Importing training and blind-testing datasets as pandas DataFrames.
+3. **Data Description and Preprocessing:** Dataset overview (excluding variability analyses in Part 1), correlation matrix, feature selection, and preprocessing routines.
 4. **Model Development:** Single Classifiers Training six individual classifiers and generating their classification reports.
 5. **Model Validation:** Validation using internal validation sets, followed by blind-well testing.
 6. **Litholog Comparisons Plotting:** True vs. predicted lithofacies logs for each classifier.
@@ -38,7 +44,8 @@ Install all dependencies using:<br>
 ### Key libraries include:
 * [scikit-learn](https://scikit-learn.org/stable/supervised_learning.html#supervised-learning)
 * **numpy, pandas, matplotlib, seaborn**
-* **scipy**
+* **scipy,  mpl_toolkits.axes_grid1, sklearn**
+* **itertools, imblearn**
 * **Jupyter Notebook**
 
 ### Data Availability
@@ -57,7 +64,7 @@ To reproduce results:
 4. Run the Jupyter notebook sequentially from top to bottom
 
 ### Requirements:
-The entire notebook was executed under 
+The entire notebook was executed under:
 * Python 3.12.8
 
 # Contact
