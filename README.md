@@ -68,6 +68,6 @@ The entire notebook was executed under:
 * Python 3.12.8
 
 # Contact
-For further questions or comments, feel free to email at: royrupam964@kgpian.iitkgp.ac.in or royrupam964@gmail.com
+For further questions or comments, feel free to email at: royrupam964@kgpian.iitkgp.ac.in or royrupam964@gmail.com, dipks21@gg.iitkgp.ac.in or dipgeo89@gmail.com
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17801779.svg)](https://doi.org/10.5281/zenodo.17801779)
